@@ -125,11 +125,9 @@ function managerQuestions(baseAnswers) {
 }
 
 function buildTeam() {
-    console.log("breakpoint2")
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR)
     }
-    console.log(teamArr)
     fs.writeFileSync(outputPath, render(teamArr), "utf-8");
 }
 
