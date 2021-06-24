@@ -4,7 +4,6 @@ const fs = require('fs');
 const templatesDir = path.resolve(__dirname, "../templates");
 
 const render = employees => {
-    console.log("breakpoint3")
     const html = [];
 
     html.push(...employees
@@ -30,6 +29,7 @@ const renderManager = manager => {
     template = replacePlaceholders(template, "email", manager.getEmail());
     template = replacePlaceholders(template, "id", manager.getId());
     template = replacePlaceholders(template, "officeNumber", manager.getOfficeNumber());
+    console.log(template)
     return template;
 };
 
@@ -55,13 +55,11 @@ const renderIntern = intern => {
 
 const renderMain = html => {
     const template = fs.readFileSync(path.resolve(templatesDir, "main.html"), "utf8");
-    console.log(template);
-    console.log("team");
     return replacePlaceholders(template, "team", html);
 };
 
 const replacePlaceholders = (template, placeholder, value) => {
-    const pattern = new RegExp(placeholder);
+    const pattern = new RegExp("{{" + placeholder + "}}", "gm");
     return template.replace(pattern, value);
 };
 

@@ -8,20 +8,70 @@
     <title>Team Members</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <!--     <script src="Manager.js"></script>
     <script src="Intern.js"></script>
     <script src="Engineer.js"></script>
-    <script src="Enmployee.js"></script>
+    <script src="Employee.js"></script>
     <script src="renderHTML.js"></script> -->
 </head>
 
 <body>
     <header class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 <div class="row row-primary row-primary-engineer">
-    <div class="col-md-3 col-chris-engineer">
+            <div class="col-12 jumbotron mb-3 team heading">
+                <h1>We are...</h1>
+            </div>
+        </div>
+    </header>
 
-        <h2>${engineer.getName}</h2>
+    <main class="container">
+        <div class="row row-primary row-primary-manager">
+    <div class="col-md-3 col-name-manager">
+
+        <h2>julie</h2>
+    </div>
+
+    <div class="col-md-1 manager-gap"></div>
+    <div class="col-md-2 col-manager">
+        <div class="row row-header">
+            <h3>Role</h3>
+        </div>
+        <div class="row-content-manager">
+            <p>Manager</p>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-manager">
+        <div class="row row-header">
+            <h3>ID</h3>
+        </div>
+        <div class="row-content-manager">
+            <p>42</p>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-manager">
+        <div class="row row-header">
+            <h3>E-mail</h3>
+        </div>
+        <div class="row-content-manager">
+            <p><a class="manager-email" href="mailto:brfe">brfe</a></p>
+        </div>
+    </div>
+    
+    <div class="col-md-2 col-manager">
+        <div class="row row-header">
+            <h3>Office Number</h3>
+        </div>
+        <div class="row-content-manager">
+            <p>444</p>
+        </div>
+    </div>
+</div><div class="row row-primary row-primary-engineer">
+    <div class="col-md-3 col-name-engineer">
+
+        <h2>chris</h2>
     </div>
 
     <div class="col-md-1 engineer-gap"></div>
@@ -30,7 +80,7 @@
             <h3>Role</h3>
         </div>
         <div class="row-content-engineer">
-            <p>${engineer.getRole}</p>
+            <p>Engineer</p>
         </div>
     </div>
 
@@ -39,7 +89,7 @@
             <h3>ID</h3>
         </div>
         <div class="row-content-engineer">
-            <p>${engineer.getId}</p>
+            <p>32</p>
         </div>
     </div>
 
@@ -48,7 +98,7 @@
             <h3>E-mail</h3>
         </div>
         <div class="row-content-engineer">
-            <p><a class="engineer-gfwea" href="mailto:${engineer.getEmail}">${engineer.getEmail}</a></p>
+            <p><a class="engineer-email" href="mailto:cbeard@hnoj.org">cbeard@hnoj.org</a></p>
         </div>
     </div>
     
@@ -57,17 +107,52 @@
             <h3>GitHub</h3>
         </div>
         <div class="row-content-engineer">
-            <p><a href="https://fewa.com/${engineer.getGithub}" target="_blank" rel="noopener norefferer">${engineer.getGithub}</a></p>
+            <p><a href="https://github.com/cbeard22" target="_blank" rel="noopener norefferer">cbeard22</a></p>
         </div>
     </div>
-</div> heading">
-                <h1>We are...</h1>
-            </div>
-        </div>
-    </header>
+</div><div class="row row-primary row-primary-intern">
+    <div class="col-md-3 col-name-intern">
 
-    <main class="container">
-        ${render}
+        <h2>bob</h2>
+    </div>
+
+    <div class="col-md-1 intern-gap"></div>
+    <div class="col-md-2 col-intern">
+        <div class="row row-header">
+            <h3>Role</h3>
+        </div>
+        <div class="row-content-intern">
+            <p>Intern</p>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-intern">
+        <div class="row row-header">
+            <h3>ID</h3>
+        </div>
+        <div class="row-content-intern">
+            <p>22</p>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-intern">
+        <div class="row row-header">
+            <h3>E-mail</h3>
+        </div>
+        <div class="row-content-intern">
+            <p><a class="intern-email" href="mailto:mroe">mroe</a></p>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-intern">
+        <div class="row row-header">
+            <h3>School</h3>
+        </div>
+        <div class="row-content-intern">
+            <p>hello</p>
+        </div>
+    </div>
+</div>
     </main>
 </body>
 
