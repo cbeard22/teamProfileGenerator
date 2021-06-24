@@ -4,6 +4,7 @@ const fs = require('fs');
 const templatesDir = path.resolve(__dirname, "../templates");
 
 const render = employees => {
+    console.log("breakpoint3")
     const html = [];
 
     html.push(...employees
@@ -18,22 +19,22 @@ const render = employees => {
         .filter(employee => employee.getRole() === "Intern")
         .map(intern => renderIntern(intern))
     );
-
-    return renderMain(html.join(''));
+console.log("HTMLtest", html)
+    return renderMain(html.join(""));
 };
 
 const renderManager = manager => {
-    let template = fs.readFileSync(path.resolve(templateDir, "manager.html"), "utf8");
+    let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8");
     template = replacePlaceholders(template, "name", manager.getName());
     template = replacePlaceholders(template, "role", manager.getRole());
     template = replacePlaceholders(template, "email", manager.getEmail());
     template = replacePlaceholders(template, "id", manager.getId());
-    template = replacePlaceholders(template, "officeNumber", manager.getofficeNumber());
+    template = replacePlaceholders(template, "officeNumber", manager.getOfficeNumber());
     return template;
 };
 
 const renderEngineer = engineer => {
-    let template = fs.readFileSync(path.resolve(templateDir, "engineer.html"), "utf8");
+    let template = fs.readFileSync(path.resolve(templatesDir, "engineer.html"), "utf8");
     template = replacePlaceholders(template, "name", engineer.getName());
     template = replacePlaceholders(template, "role", engineer.getRole());
     template = replacePlaceholders(template, "email", engineer.getEmail());
@@ -43,7 +44,7 @@ const renderEngineer = engineer => {
 };
 
 const renderIntern = intern => {
-    let template = fs.readFileSync(path.resolve(templateDir, "intern.html"), "utf8");
+    let template = fs.readFileSync(path.resolve(templatesDir, "intern.html"), "utf8");
     template = replacePlaceholders(template, "name", intern.getName());
     template = replacePlaceholders(template, "role", intern.getRole());
     template = replacePlaceholders(template, "email", intern.getEmail());
@@ -53,7 +54,9 @@ const renderIntern = intern => {
 };
 
 const renderMain = html => {
-    const template = fs.readFileSync(path.resolve(templateDir, "main.html"), "utf8");
+    const template = fs.readFileSync(path.resolve(templatesDir, "main.html"), "utf8");
+    console.log(template);
+    console.log("team");
     return replacePlaceholders(template, "team", html);
 };
 
@@ -62,4 +65,4 @@ const replacePlaceholders = (template, placeholder, value) => {
     return template.replace(pattern, value);
 };
 
-module.exports = render;
+module.exports = render

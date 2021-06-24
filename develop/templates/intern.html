@@ -1,7 +1,7 @@
 <div class="row row-primary row-primary-intern">
     <div class="col-md-3 col-name-intern">
 
-        <h2>{{ name }}</h2>
+        <h2>${intern.getName}</h2>
     </div>
 
     <div class="col-md-1 intern-gap"></div>
@@ -10,7 +10,7 @@
             <h3>Role</h3>
         </div>
         <div class="row-content-intern">
-            <p>{{ role }}</p>
+            <p>${intern.getRole}</p>
         </div>
     </div>
 
@@ -19,7 +19,7 @@
             <h3>ID</h3>
         </div>
         <div class="row-content-intern">
-            <p>{{ id }}</p>
+            <p>${intern.getId}</p>
         </div>
     </div>
 
@@ -28,16 +28,16 @@
             <h3>E-mail</h3>
         </div>
         <div class="row-content-intern">
-            <p><a class="intern-email" href="mainto:{{ email }}">{{ email }}</a></p>
+            <p><a class="intern-email" href="mailto:${intern.getEmail}">${intern.getEmail}</a></p>
         </div>
     </div>
-    
+
     <div class="col-md-2 col-intern">
         <div class="row row-header">
             <h3>School</h3>
         </div>
         <div class="row-content-intern">
-            <p>{{ school }}</p>
+            <p>${intern.getSchool}</p>
         </div>
     </div>
 </div>
