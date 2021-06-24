@@ -7,20 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Members</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--     <script src="Manager.js"></script>
+    <script src="Intern.js"></script>
+    <script src="Engineer.js"></script>
+    <script src="Enmployee.js"></script>
+    <script src="renderHTML.js"></script> -->
 </head>
 
 <body>
     <header class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 team heading">
+            <div class="col-12 jumbotron mb-3 <div class="row row-primary row-primary-engineer">
+    <div class="col-md-3 col-chris-engineer">
+
+        <h2>${engineer.getName}</h2>
+    </div>
+
+    <div class="col-md-1 engineer-gap"></div>
+    <div class="col-md-2 col-engineer">
+        <div class="row row-header">
+            <h3>Role</h3>
+        </div>
+        <div class="row-content-engineer">
+            <p>${engineer.getRole}</p>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-engineer">
+        <div class="row row-header">
+            <h3>ID</h3>
+        </div>
+        <div class="row-content-engineer">
+            <p>${engineer.getId}</p>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-engineer">
+        <div class="row row-header">
+            <h3>E-mail</h3>
+        </div>
+        <div class="row-content-engineer">
+            <p><a class="engineer-gfwea" href="mailto:${engineer.getEmail}">${engineer.getEmail}</a></p>
+        </div>
+    </div>
+    
+    <div class="col-md-2 col-engineer">
+        <div class="row row-header">
+            <h3>GitHub</h3>
+        </div>
+        <div class="row-content-engineer">
+            <p><a href="https://fewa.com/${engineer.getGithub}" target="_blank" rel="noopener norefferer">${engineer.getGithub}</a></p>
+        </div>
+    </div>
+</div> heading">
                 <h1>We are...</h1>
             </div>
         </div>
     </header>
 
-    <main class ="container">
-        ${render(employees)}
+    <main class="container">
+        ${render}
     </main>
 </body>
 
