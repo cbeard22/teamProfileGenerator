@@ -10,7 +10,7 @@
 - [Contributing](#contributing)
 - [Test](#tests)
 
-## Walkthrough Videos
+## Walkthrough
 
 User Prompts on Node Walkthrough:
 https://drive.google.com/file/d/1C8RTVAouPfyINE95T8_8D9zIIrhguX2D/view?usp=sharing
