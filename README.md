@@ -1,7 +1,7 @@
 # Team Profile Generator
 
 ## Table of Contents
-- [Walkthrough Videos](#Walkthrough_Videos)
+- [Walkthrough_Videos](#Walkthrough Videos)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
