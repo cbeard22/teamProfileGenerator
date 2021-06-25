@@ -1,0 +1,65 @@
+body {
+    color: white;
+    background-color: rgb(11, 59, 2);
+}
+
+.jumbotron{
+color:white;
+background-color: rgb(24, 24, 24);
+}
+
+.row-primary {
+    margin-top:15px;
+    border:3px solid #000000;
+}
+
+.col-name-manager {
+    background-color:#550135;
+    color:#faf7f3;
+    text-align:center;
+}
+
+.col-name-engineer {
+    background-color:#4b0101;
+    color:#faf7f3;        
+    text-align:center;
+}
+
+.col-name-intern {
+    background-color: #070042;
+    color:#faf7f3;
+    text-align:center;
+}
+
+h1 {
+    font-size:70px;
+    font-weight:400;
+    margin-left:35px;
+}
+
+h2 {
+    width:100%;
+    font-weight:bolder;
+    margin-top:10%;
+    margin-bottom:5%;
+}
+
+h3 {
+    width:100%;
+    text-align:center;
+    font-size:30px;
+    font-weight:400;
+}
+
+p {
+    text-align:center;
+    font-size:18px;
+    margin-top:15%;
+    width:100%;
+}
+
+a {
+    text-align:center;
+    font-size:18px;
+    width:100%;
+}
