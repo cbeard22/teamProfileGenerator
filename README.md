@@ -1,11 +1,7 @@
 # Team Profile Generator
 
-## Description
-
-This application allows the user to input team members and list their name, email, id number, job role, github username, office number, and school. After all of the team members have been entered an HTML page is created listing all of the team members and organizes them by their job role. 
-
 ## Table of Contents
-
+- [Walkthrough_Videos])#Walkthrough_Videos)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -13,6 +9,18 @@ This application allows the user to input team members and list their name, emai
 - [License](#license)
 - [Contributing](#contributing)
 - [Test](#tests)
+
+## Walkthrough Videos
+
+User Prompts on Node Walkthrough:
+https://drive.google.com/file/d/1C8RTVAouPfyINE95T8_8D9zIIrhguX2D/view?usp=sharing
+
+Test Walkthrough:
+
+
+## Description
+
+This application allows the user to input team members and list their name, email, id number, job role, github username, office number, and school. After all of the team members have been entered an HTML page is created listing all of the team members and organizes them by their job role. 
 
 ## Installation
 
